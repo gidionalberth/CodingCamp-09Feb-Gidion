@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website - Company Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center">
+                        <span class="text-2xl">G</span>
+                    </div>
+
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition">Home</a>
+                    <a href="#profile" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition">Our Profile</a>
+                    <a href="#portfolio" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition">Portfolio</a>
+                    <a href="#message" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition">Message Us</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+                <a href="#profile" class="block py-2 text-gray-700 hover:text-blue-600">Our Profile</a>
+                <a href="#portfolio" class="block py-2 text-gray-700 hover:text-blue-600">Portfolio</a>
+                <a href="#message" class="block py-2 text-gray-700 hover:text-blue-600">Message Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div class="text-center px-4">
+            <h1 id="welcome-text" class="text-4xl md:text-6xl font-bold text-gray-800 mb-4">
+                Hi , Welcome To Website
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600">Ini adalah website untuk latihan</p>
+            <div class="mt-8">
+                <a href="#profile" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition inline-block">
+                    Explore More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <!-- Photo Banner -->
+            <div class="mb-12">
+                <div class="relative h-40 md:h-25 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-lg overflow-hidden">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h2 class="text-4xl md:text-6xl font-bold mb-2">Our Company</h2>
+                            <p class="text-xl md:text-2xl">Building the Future Together</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About the Company -->
+            <div class="mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">About the Company</h2>
+                <div class="max-w-4xl mx-auto">
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        We are a leading technology company dedicated to providing innovative solutions for businesses worldwide. 
+                        With over 10 years of experience in the industry, we have successfully served hundreds of clients across various sectors.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Our team consists of expert professionals who are passionate about technology and committed to delivering 
+                        excellence in every project we undertake. We believe in building long-term relationships with our clients 
+                        through quality service and continuous innovation.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Vision and Mission -->
+            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <div class="bg-blue-50 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-4">Our Vision</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        To become the most trusted technology partner globally, empowering businesses to achieve 
+                        digital transformation and sustainable growth through innovative solutions.
+                    </p>
+                </div>
+                <div class="bg-green-50 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold text-green-800 mb-4">Our Mission</h3>
+                    <ul class="text-gray-700 space-y-2">
+                        <li>• Deliver cutting-edge technology solutions</li>
+                        <li>• Provide exceptional customer service</li>
+                        <li>• Foster innovation and creativity</li>
+                        <li>• Build sustainable business partnerships</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">Our Headquarter</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Jakarta -->
+                <div class="text-center">
+                    <div class="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center">
+                        <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Jakarta</h3>
+                </div>
+
+                <!-- Bandung -->
+                <div class="text-center">
+                    <div class="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center">
+                        <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Bandung</h3>
+                </div>
+
+                <!-- Surabaya -->
+                <div class="text-center">
+                    <div class="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center">
+                        <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Surabaya</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Us Section -->
+    <section id="message" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">Message Us</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- Form -->
+                <div>
+                    <form id="messageForm" class="space-y-6">
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Nama</label>
+                            <input type="text" id="name" name="name" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                   placeholder="Enter your name">
+                            <span class="error-message text-red-500 text-sm hidden"></span>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Tanggal Lahir</label>
+                            <input type="date" id="tanggalLahir" name="tanggalLahir"
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <span class="error-message text-red-500 text-sm hidden"></span>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Jenis Kelamin</label>
+                            <div class="flex space-x-6">
+                                <label class="flex items-center">
+                                    <input type="radio" name="jenisKelamin" value="Laki-Laki" class="mr-2">
+                                    <span class="text-gray-700">Laki-Laki</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="jenisKelamin" value="Perempuan" class="mr-2">
+                                    <span class="text-gray-700">Perempuan</span>
+                                </label>
+                            </div>
+                            <span class="error-message text-red-500 text-sm hidden"></span>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email"
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                   placeholder="Enter your email">
+                            <span class="error-message text-red-500 text-sm hidden"></span>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Nomer Telpon</label>
+                            <input type="tel" id="phone" name="phone"
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                   placeholder="Enter your phone number">
+                            <span class="error-message text-red-500 text-sm hidden"></span>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Pesan</label>
+                            <textarea id="pesan" name="pesan" rows="4"
+                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                      placeholder="Enter your message"></textarea>
+                            <span class="error-message text-red-500 text-sm hidden"></span>
+                        </div>
+
+                        <button type="submit" 
+                                class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition font-medium">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Result Display -->
+                <div>
+                    <div id="resultBox" class="bg-gray-50 border-2 border-gray-300 rounded-lg p-6 min-h-[400px]">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Current Time</h3>
+                        <p id="currentTime" class="text-gray-600 mb-6"></p>
+                        
+                        <div id="formResult" class="hidden">
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">Submitted Information</h3>
+                            <div class="space-y-2 text-gray-700">
+                                <p><span class="font-semibold">Name:</span> <span id="resultName"></span></p>
+                                <p><span class="font-semibold">Tanggal Lahir:</span> <span id="resultTanggalLahir"></span></p>
+                                <p><span class="font-semibold">Jenis Kelamin:</span> <span id="resultJenisKelamin"></span></p>
+                                <p><span class="font-semibold">Email:</span> <span id="resultEmail"></span></p>
+                                <p><span class="font-semibold">Phone:</span> <span id="resultPhone"></span></p>
+                                <p><span class="font-semibold">Message:</span> <span id="resultpesan"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2026. All rights reserved.</p>
+            <p class="mt-2 text-gray-400">Created By Gidion Albeth A P</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
